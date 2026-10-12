@@ -4,36 +4,84 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası — Sarıtepe</title>
-<meta name="description" content="Sarıtepe Dış Ticaret A.Ş. gizlilik politikası: hangi veriler işlenir, neden işlenir, ne kadar saklanır.">
+<meta name="description" content="Sarıtepe Dış Ticaret A.Ş. gizlilik politikası: hangi veriler işlenir, neden işlenir, kimlerle paylaşılır, ne kadar saklanır.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root { --siyah:#0b0b0c; --altin:#D2B639; --yazi:#e8e6e1; --sonuk:#9b9892; --cizgi:#232325; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--siyah); color:var(--yazi);
-         font:16px/1.75 "Helvetica Neue",Helvetica,Arial,sans-serif; }
-  .kap { max-width:760px; margin:0 auto; padding:64px 24px 96px; }
-  .marka { font-size:.78rem; letter-spacing:.34em; color:var(--altin);
-           text-transform:uppercase; margin-bottom:56px; }
-  h1 { font-size:1.9rem; font-weight:400; letter-spacing:.02em; margin:0 0 8px; }
-  .tarih { color:var(--sonuk); font-size:.85rem; margin-bottom:48px; }
-  h2 { font-size:1.05rem; font-weight:500; color:var(--altin);
-       margin:44px 0 12px; letter-spacing:.02em; }
-  p, li { color:var(--yazi); }
-  ul { padding-left:20px; }
-  li { margin-bottom:8px; }
-  a { color:var(--altin); text-decoration:none; border-bottom:1px solid rgba(210,182,57,.35); }
-  .alt { margin-top:64px; padding-top:28px; border-top:1px solid var(--cizgi);
-         color:var(--sonuk); font-size:.85rem; }
-  @media (max-width:640px) { .kap { padding:40px 20px 72px; } h1 { font-size:1.5rem; } }
+  :root{
+    --ink:#0B0B0C;
+    --paper:#F5F4F0;
+    --gold:#D2B639;
+    --gold-bright:#F5DE6C;
+    --gold-deep:#B28D09;
+    --gold-grad:linear-gradient(135deg,#F5DE6C 0%,#D2B639 48%,#B28D09 100%);
+    --steel:#9A9AA2;
+    --line:rgba(255,255,255,0.10);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ink); color:var(--paper);
+    font-family:'Inter',sans-serif; font-weight:400;
+    font-size:16px; line-height:1.78; -webkit-font-smoothing:antialiased;
+  }
+  .kap{max-width:780px; margin:0 auto; padding:72px 28px 110px;}
+
+  .marka{
+    font-family:'Space Mono',monospace; font-size:.72rem; font-weight:700;
+    letter-spacing:.32em; text-transform:uppercase;
+    background:var(--gold-grad); -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent; color:var(--gold);
+    margin-bottom:60px;
+  }
+
+  h1{
+    font-family:'Archivo Black',sans-serif; font-weight:400;
+    font-size:clamp(2rem,5.5vw,3rem); line-height:1.08;
+    letter-spacing:-.015em; text-transform:uppercase;
+    margin:0 0 14px;
+  }
+  .tarih{
+    font-family:'Space Mono',monospace; font-size:.76rem;
+    letter-spacing:.16em; text-transform:uppercase;
+    color:var(--steel); margin-bottom:12px;
+  }
+  .giris{
+    font-size:1.06rem; color:#D9D9DD;
+    padding-bottom:40px; border-bottom:1px solid var(--line);
+  }
+
+  h2{
+    font-family:'Space Mono',monospace; font-size:.78rem; font-weight:700;
+    letter-spacing:.2em; text-transform:uppercase;
+    color:var(--gold); margin:52px 0 14px;
+  }
+  p{margin:0 0 16px;}
+  ul{padding-left:22px; margin:0 0 16px;}
+  li{margin-bottom:9px;}
+  strong{font-weight:600; color:#fff;}
+  a{
+    color:var(--gold); text-decoration:none;
+    border-bottom:1px solid rgba(210,182,57,.38);
+  }
+  a:hover{border-bottom-color:var(--gold-bright); color:var(--gold-bright);}
+
+  .alt{
+    margin-top:72px; padding-top:30px; border-top:1px solid var(--line);
+    font-family:'Space Mono',monospace; font-size:.74rem; line-height:1.9;
+    letter-spacing:.06em; color:var(--steel);
+  }
+  @media (max-width:640px){ .kap{padding:44px 20px 80px;} .marka{margin-bottom:40px;} }
 </style>
 </head>
 <body>
 <main class="kap">
   <div class="marka">Sarıtepe — İstanbul — 1972</div>
 
-  <h1>Gizlilik Politikası</h1>
+  <h1>Gizlilik<br>Politikası</h1>
   <div class="tarih">Son güncelleme: 12 Ekim 2026</div>
 
-  <p>
+  <p class="giris">
     Sarıtepe Dış Ticaret A.Ş. olarak bize ulaşan kişisel verileri yalnızca sizinle
     iletişim kurmak ve talebinizi karşılamak için işliyoruz. Bu sayfa hangi verinin
     neden işlendiğini, nereye gittiğini ve ne kadar kaldığını anlatır.
@@ -41,10 +89,10 @@
 
   <h2>Hangi veriler işlenir</h2>
   <ul>
-    <li><strong>İletişim bilgileri:</strong> ad, telefon numarası, e-posta adresi, firma adı.</li>
-    <li><strong>Yazışma içeriği:</strong> WhatsApp, e-posta ya da iletişim formu üzerinden
+    <li><strong>İletişim bilgileri</strong> — ad, telefon numarası, e-posta adresi, firma adı.</li>
+    <li><strong>Yazışma içeriği</strong> — WhatsApp, e-posta ya da iletişim formu üzerinden
         bize yazdığınız mesajlar ve varsa gönderdiğiniz görsel ve belgeler.</li>
-    <li><strong>Talep bilgileri:</strong> ilgilendiğiniz ürün kodları, ölçü, miktar ve
+    <li><strong>Talep bilgileri</strong> — ilgilendiğiniz ürün kodları, ölçü, miktar ve
         teslim bilgisi gibi teklif hazırlamak için gereken ayrıntılar.</li>
   </ul>
   <p>
@@ -76,7 +124,7 @@
   <p>Verileriniz yalnız hizmetin yürütülmesi için gereken sağlayıcılarla işlenir:</p>
   <ul>
     <li><strong>Meta Platforms</strong> — WhatsApp üzerinden gelen ve giden mesajlar</li>
-    <li><strong>Supabase</strong> — mesaj ve kayıtların saklandığı veritabanı (Avrupa Birliği, Frankfurt)</li>
+    <li><strong>Supabase</strong> — mesaj ve kayıtların saklandığı veritabanı (Avrupa Birliği)</li>
     <li><strong>Anthropic</strong> — yapay zekâ destekli yanıtların üretilmesi</li>
     <li><strong>Vercel</strong> — bu sitenin yayınlanması</li>
   </ul>
@@ -108,8 +156,8 @@
   </p>
 
   <div class="alt">
-    Bu politika zaman zaman güncellenebilir. Değişiklik olduğunda bu sayfadaki
-    tarih yenilenir.
+    Bu politika zaman zaman güncellenebilir.<br>
+    Değişiklik olduğunda bu sayfadaki tarih yenilenir.
   </div>
 </main>
 </body>
