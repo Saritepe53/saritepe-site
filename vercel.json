@@ -1,0 +1,20 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/pvc-katalog.html",
+      "destination": "/panel-katalog.html",
+      "permanent": true
+    },
+    {
+      "source": "/index_1.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index_3.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
