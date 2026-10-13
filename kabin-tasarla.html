@@ -224,9 +224,17 @@
     document.getElementById('wa').href = 'https://wa.me/905324615118?text=' + encodeURIComponent(metin);
   }
 
+  var gezAcik = false;
+  function gezDugmesiniEsle(acik){
+    gezAcik = acik;
+    var b = document.getElementById('gez');
+    b.classList.toggle('on', acik);
+    b.textContent = acik ? 'Dışarıdan bak' : 'İçinde gez';
+  }
   function degisti(d){
     sonDurum = d;
     yuzeyleriCiz(d); panelleriCiz(d); ozetCiz(d);
+    gezDugmesiniEsle(d.yurume);
   }
 
   window.Tasarla.baslat(sahneKutu, PANELLER, { degisti: degisti });
@@ -237,20 +245,14 @@
     window.Tasarla.sahne(ad);
     document.getElementById('sahneAsansor').classList.toggle('on', ad !== 'salon');
     document.getElementById('sahneSalon').classList.toggle('on', ad === 'salon');
-    document.getElementById('gez').classList.remove('on');
-    document.getElementById('gez').textContent = 'İçinde gez';
     badge.textContent = ad === 'salon' ? 'Salon' : 'Asansör kabini';
   }
   document.getElementById('sahneAsansor').onclick = function(){ sahneSec('asansor'); };
   document.getElementById('sahneSalon').onclick = function(){ sahneSec('salon'); };
   document.getElementById('sifirla').onclick = function(){ window.Tasarla.temizle(); badge.textContent = 'Sıfırlandı'; };
 
-  var gezAcik = false;
   document.getElementById('gez').onclick = function(){
-    gezAcik = !gezAcik;
-    window.Tasarla.yurumeAc(gezAcik);
-    this.classList.toggle('on', gezAcik);
-    this.textContent = gezAcik ? 'Dışarıdan bak' : 'İçinde gez';
+    window.Tasarla.yurumeAc(!gezAcik);
     badge.textContent = gezAcik
       ? 'Yön tuşlarıyla yürüyün, sürükleyerek bakın'
       : 'Sürükleyin, tekerlekle yaklaşın';
