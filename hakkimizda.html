@@ -327,6 +327,11 @@
   @media(max-width:800px){.story{grid-template-columns:1fr;gap:30px}}
   .story-visual{aspect-ratio:4/3;border:1px solid var(--line);border-radius:4px;position:relative;overflow:hidden;background:linear-gradient(135deg,#1b1b20,#0e0e10)}
   .story-visual::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(210,182,57,0) 0 10px,rgba(210,182,57,.35) 10px 11px,transparent 11px 22px),repeating-linear-gradient(115deg,rgba(255,255,255,0) 0 14px,rgba(200,200,210,.18) 14px 15px);clip-path:polygon(20% 0,100% 30%,100% 100%,0 100%);opacity:.8}
+  /* Marka S harfi: kutunun ortasinda, cizgilerin uzerinde. Kaynak logo
+     kucuk oldugu icin buyutulmuyor; kucuk ve net duruyor. */
+  .story-s{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:clamp(84px,22%,132px);height:auto;z-index:3;opacity:.95;
+    filter:drop-shadow(0 6px 22px rgba(0,0,0,.55))}
   .story-visual .badge{position:absolute;top:16px;left:16px;z-index:2;font-family:'Space Mono',monospace;font-size:11px;color:var(--gold);border:1px solid var(--line);padding:5px 10px;border-radius:2px;background:rgba(0,0,0,.4)}
 </style>
 </head>
@@ -391,7 +396,7 @@
     <h2 style="font-size:clamp(28px,3.6vw,42px);margin:16px 0 20px">Sarıtepe</h2>
     <p style="color:var(--steel);font-size:15.5px" data-i18n="ab_story_p">Kökleri 1972 yılında demir-çelik sektörüne uzanan firmanın yaklaşık 50 yıllık birikimini yeni bir anlayış ve nesille buluşturmak üzere, Sarıtepe A.Ş. 2020 yılında Selahattin Sarıtepe tarafından kuruldu. Amacımız; bu köklü ve üstün deneyimi vizyoner bir bakışla yeni nesillere taşıyarak sektöre en kaliteli ve rekabetçi ürünleri sunmaktır.</p>
   </div>
-  <div class="story-visual"><span class="badge">1972 &nbsp;→&nbsp; 2020</span></div>
+  <div class="story-visual"><span class="badge">1972 &nbsp;→&nbsp; 2020</span><img class="story-s" src="gorsel/s-logo.png" alt="Sarıtepe" loading="lazy" decoding="async"></div>
 </div></div></section>
 
 <section class="sec" style="padding-top:0"><div class="wrap"><div class="about-two">
