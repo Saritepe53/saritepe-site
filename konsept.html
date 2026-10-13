@@ -323,6 +323,17 @@
   .ig-float:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 12px 30px rgba(214,36,159,.5)}
   .ig-float svg{width:27px;height:27px}
   @media(max-width:600px){.ig-float{width:47px;height:47px;right:78px;bottom:16px}.ig-float svg{width:24px;height:24px}}
+
+  /* WhatsApp yuzen dugmesi. BU SAYFADA STILI EKSIKTI: dugmenin isareti
+     vardi ama kurali yoktu, SVG kendi dogal boyutuna acilip butun ekrani
+     kapliyordu ve sayfa kullanilamaz hale geliyordu. Kurallar index.html
+     dosyasindan birebir alindi; diger sayfalarla ayni. */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:120;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .2s,box-shadow .2s}
+  .wa-float:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 12px 30px rgba(37,211,102,.55)}
+  .wa-float svg{width:32px;height:32px}
+  .wa-float::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #25D366;opacity:.5;animation:waPulse 2.2s infinite}
+  @keyframes waPulse{0%{transform:scale(1);opacity:.5}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}
+  @media(max-width:600px){.wa-float{width:52px;height:52px;right:16px;bottom:16px}.wa-float svg{width:29px;height:29px}}
   .foot-social{display:flex;align-items:center;gap:9px;margin-top:14px}
   .foot-social a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);
     padding:8px 13px;border-radius:2px;font-size:13px;color:#D9D9DD;transition:.2s}
