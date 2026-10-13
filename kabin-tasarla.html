@@ -51,6 +51,7 @@
   .badge{position:absolute;left:14px;top:14px;font-family:'Space Mono',monospace;font-size:11px;color:var(--gold);
          background:rgba(0,0,0,.5);border:1px solid var(--line);padding:6px 11px;border-radius:2px;z-index:5;max-width:60%}
   .stageAlt{position:absolute;left:14px;bottom:14px;display:flex;gap:7px;z-index:5;flex-wrap:wrap}
+  .tb.zoom{width:40px;height:38px;justify-content:center;padding:0;font-size:17px;line-height:1;background:rgba(0,0,0,.45)}
   .rec{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.66);
        flex-direction:column;gap:14px;z-index:9;text-align:center;padding:20px}
   .rec.on{display:flex}
@@ -106,6 +107,8 @@
     <div class="badge" id="badge">Yükleniyor…</div>
     <div class="stageAlt">
       <button class="tb" id="gez">İçinde gez</button>
+      <button class="tb zoom" id="yakin" aria-label="Yaklaş">+</button>
+      <button class="tb zoom" id="uzak" aria-label="Uzaklaş">−</button>
     </div>
     <div class="rec" id="rec"><p id="recTxt">Video hazırlanıyor…</p><div class="bar"><i id="recBar"></i></div></div>
   </div>
@@ -199,7 +202,7 @@
       var r = document.createElement('div'); r.className = 'row';
       var a = document.createElement('span'); a.textContent = s.ad;
       var b = document.createElement('span');
-      b.textContent = s.kod ? s.kod + '  ·  ' + s.plaka + ' plaka' : '—';
+      b.textContent = s.kod ? s.kod + '  ·  ' + s.plaka + ' plaka' : 'seçilmedi';
       toplam += s.plaka || 0;
       r.append(a, b); ozet.appendChild(r);
     });
@@ -238,7 +241,7 @@
   }
 
   window.Tasarla.baslat(sahneKutu, PANELLER, { degisti: degisti });
-  badge.textContent = 'Yüzeye dokunun, sonra panel seçin';
+  badge.textContent = 'Boş başlıyor — yüzeye dokunun, sonra panel seçin';
 
   /* ---- Sahne degistirme ---- */
   function sahneSec(ad){
@@ -307,6 +310,9 @@
       requestAnimationFrame(don);
     })();
   };
+
+  document.getElementById('yakin').onclick = function(){ window.Tasarla.yakinlastir(-1); };
+  document.getElementById('uzak').onclick  = function(){ window.Tasarla.yakinlastir(1); };
 
   window.addEventListener('resize', function(){ window.Tasarla.boyutlandir(); });
 })();
