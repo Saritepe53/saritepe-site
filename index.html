@@ -142,6 +142,10 @@
     .hm-card img{height:56vw;max-height:290px}
   }
 
+  /* H1 metni sozlukte zaten yaziliydi ama etiketi konmamisti; Google
+     sayfanin konusunu once buradan anliyor. */
+  .hero-h1{font-family:'Archivo Black',sans-serif;font-size:clamp(28px,4.6vw,52px);line-height:1.06;letter-spacing:-.015em;margin:0 0 16px;color:var(--paper)}
+  .hero-h1 em{font-style:normal;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
   .hero p.lead{font-size:clamp(16px,2vw,20px);color:#C7C7CE;max-width:52ch;margin-bottom:38px}
   .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
   .hero-stats{display:flex;gap:46px;margin-top:64px;flex-wrap:wrap}
@@ -357,11 +361,11 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Manufacturer",
+    "@type": "Organization",
     "name": "Sarıtepe Dış Ticaret A.Ş.",
     "url": "https://saritepe.com/",
-    "logo": "https://saritepe.com/logo.png",
-    "description": "Asansör kabinleri, ev, ofis, mağaza, otel ve restoranlar için dekoratif PVC duvar ve yer paneli imalatı yapan İstanbul merkezli üretici firma.",
+    "logo": "https://saritepe.com/gorsel/logo.png",
+    "description": "Asansör kabinleri, ev, ofis, mağaza, otel ve restoranlar için dekoratif duvar ve yer paneli. 31 yüzey, her biri kendi koduyla. İstanbul İkitelli merkezli dış ticaret firması.",
     "email": "saritepe@saritepe-ss.com",
     "telephone": "+90-212-511-51-18",
     "address": {
@@ -376,7 +380,7 @@
       "@type": "Offer",
       "itemOffered": {
         "@type": "Product",
-        "name": "Dekoratif PVC Duvar ve Yer Panelleri",
+        "name": "Dekoratif Duvar ve Yer Panelleri",
         "category": "Dekoratif Yüzey Kaplama Paneli"
       }
     }
@@ -455,7 +459,8 @@
       <div class="hm-track" id="hmTrack"><figure class="hm-card"><img src="gorsel/ana/002.jpg" alt="SS-101" loading="eager"><figcaption>SS-101</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/003.jpg" alt="SS-302" loading="eager"><figcaption>SS-302</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/004.jpg" alt="SS-403" loading="eager"><figcaption>SS-403</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/005.jpg" alt="SS-501" loading="eager"><figcaption>SS-501</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/006.jpg" alt="SS-601" loading="eager"><figcaption>SS-601</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/007.jpg" alt="SS-702" loading="eager"><figcaption>SS-702</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/008.jpg" alt="SS-801" loading="eager"><figcaption>SS-801</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/009.jpg" alt="SS-904" loading="eager"><figcaption>SS-904</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/002.jpg" alt="SS-101"><figcaption>SS-101</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/003.jpg" alt="SS-302"><figcaption>SS-302</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/004.jpg" alt="SS-403"><figcaption>SS-403</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/005.jpg" alt="SS-501"><figcaption>SS-501</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/006.jpg" alt="SS-601"><figcaption>SS-601</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/007.jpg" alt="SS-702"><figcaption>SS-702</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/008.jpg" alt="SS-801"><figcaption>SS-801</figcaption></figure><figure class="hm-card"><img src="gorsel/ana/009.jpg" alt="SS-904"><figcaption>SS-904</figcaption></figure></div>
     </div>
     
-    <p class="lead" data-i18n="hero_lead">Dekoratif duvar ve yer panelleri. Duvardan zemine, projelerinize karakter ve kalite kazandıran yüzey koleksiyonları — Sarıtepe güvencesiyle.</p>
+    <h1 class="hero-h1" data-i18n="hero_h1">Mekânı tanımlayan <em>yüzeyler</em>.</h1>
+<p class="lead" data-i18n="hero_lead">Dekoratif duvar ve yer panelleri. Duvardan zemine, projelerinize karakter ve kalite kazandıran yüzey koleksiyonları — Sarıtepe güvencesiyle.</p>
     <div class="hero-cta">
       <a href="#urunler" class="btn btn-primary" data-i18n="hero_cta1">Koleksiyonu Keşfet →</a>
       <a href="#katalog" class="btn btn-ghost" data-i18n="nav_catalog">E-Katalog</a>
