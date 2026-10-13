@@ -67,49 +67,52 @@
   @media(max-width:640px){.kbar{padding:11px 15px}.kbar .tt{display:none}.ctrl{gap:14px}.nav{width:44px;height:44px}}
 </style>
 </head>
+<!-- NOT: Bu sayfada gorsellere loading="lazy" KONMAZ. Sayfa cevirmeli
+     katalogta sayfalar donusturulmus konumda duruyor; tarayici hepsini
+     ekran disi sanip hicbirini indirmiyor ve katalog bembeyaz aciliyor. -->
 <body>
 <div class="ld" id="ld"><div class="sp"></div><p>Katalog yükleniyor…</p></div>
 
 <div class="kbar">
-  <div class="l"><img class="logo" src="gorsel/katalog/001.png" alt="Sarıtepe" loading="lazy" decoding="async"><span class="tt">Panel Kataloğu</span></div>
+  <div class="l"><img class="logo" src="gorsel/katalog/001.png" alt="Sarıtepe" decoding="async"><span class="tt">Panel Kataloğu</span></div>
   <a class="kb" href="index.html">← Siteye Dön</a>
 </div>
 
 <div class="stage">
   <div id="book">
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/002.jpg" alt="Kapak" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/003.jpg" alt="SS-101" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/004.jpg" alt="SS-102" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/005.jpg" alt="SS-103" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/006.jpg" alt="SS-301" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/007.jpg" alt="SS-302" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/008.jpg" alt="SS-303" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/009.jpg" alt="SS-401" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/010.jpg" alt="SS-402" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/011.jpg" alt="SS-403" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/012.jpg" alt="SS-501" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/013.jpg" alt="SS-502" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/014.jpg" alt="SS-503" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/015.jpg" alt="SS-601" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/016.jpg" alt="SS-602" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/017.jpg" alt="SS-603" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/018.jpg" alt="SS-701" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/019.jpg" alt="SS-702" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/020.jpg" alt="SS-703" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/021.jpg" alt="SS-201" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/022.jpg" alt="SS-202" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/023.jpg" alt="SS-203" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/024.jpg" alt="SS-801" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/025.jpg" alt="SS-802" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/026.jpg" alt="SS-803" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/027.jpg" alt="SS-901" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/028.jpg" alt="SS-902" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/029.jpg" alt="SS-903" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/030.jpg" alt="SS-904" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/031.jpg" alt="Marble SS-1001" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/032.jpg" alt="Massa SS-1002" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/033.jpg" alt="Galaxy SS-1003" loading="lazy" decoding="async"></div>
-      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/034.jpg" alt="Arka Kapak" loading="lazy" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/002.jpg" alt="Kapak" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/003.jpg" alt="SS-101" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/004.jpg" alt="SS-102" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/005.jpg" alt="SS-103" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/006.jpg" alt="SS-301" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/007.jpg" alt="SS-302" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/008.jpg" alt="SS-303" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/009.jpg" alt="SS-401" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/010.jpg" alt="SS-402" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/011.jpg" alt="SS-403" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/012.jpg" alt="SS-501" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/013.jpg" alt="SS-502" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/014.jpg" alt="SS-503" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/015.jpg" alt="SS-601" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/016.jpg" alt="SS-602" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/017.jpg" alt="SS-603" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/018.jpg" alt="SS-701" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/019.jpg" alt="SS-702" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/020.jpg" alt="SS-703" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/021.jpg" alt="SS-201" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/022.jpg" alt="SS-202" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/023.jpg" alt="SS-203" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/024.jpg" alt="SS-801" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/025.jpg" alt="SS-802" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/026.jpg" alt="SS-803" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/027.jpg" alt="SS-901" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/028.jpg" alt="SS-902" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/029.jpg" alt="SS-903" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/030.jpg" alt="SS-904" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/031.jpg" alt="Marble SS-1001" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/032.jpg" alt="Massa SS-1002" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/033.jpg" alt="Galaxy SS-1003" decoding="async"></div>
+      <div class="page" data-density="hard"><img class="pimg" src="gorsel/katalog/034.jpg" alt="Arka Kapak" decoding="async"></div>
   </div>
   <div class="ctrl">
     <button class="nav" id="p" aria-label="Önceki">‹</button>
